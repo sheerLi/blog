@@ -1,5 +1,5 @@
 export default {
-  base: "/blog/",
+  base: "/",
   lang: "zh",
   title: "Web前端知识体系",
   titleTemplate: "前端知识体系和计算机基础知识整理与分享",

@@ -1,0 +1,12 @@
+# TAG = $(shell git describe --abbrev=0 --tags)
+TAG = v1.0.0
+IMAGE_TAG = $(TAG:v%=%)
+IMAGE_NAME = sheerli/blog
+
+image:
+	docker build -t $(IMAGE_NAME):latest -t $(IMAGE_NAME):$(IMAGE_TAG) -f Dockerfile .
+	docker image prune -f
+
+push:
+	docker push $(IMAGE_NAME):$(IMAGE_TAG)
+	docker push $(IMAGE_NAME):latest
