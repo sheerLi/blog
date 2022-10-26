@@ -29,24 +29,25 @@ export default {
       },
       {
         text: "前端工程化",
-        items: [{ text: "Vite", link: "/engineer/vite" }],
+        items: [{ text: "Vite", link: "/engineer/vite/" }],
       },
       {
         text: "Docker",
         link: "/docker",
       },
     ],
-    sidebar: [
-      {
-        text: "Vite",
-        items: [
-          {
-            text: "概念",
-            link: "/engineer/vite",
-          },
-        ],
-      },
-    ],
+    sidebar: {
+      '/engineer/vite/': [
+        {
+          text: 'Vite',
+          items: [
+            { text: '概念', link: '/engineer/vite/' },
+            { text: '依赖预构建', link: '/engineer/vite/dep-pre-bundling' }, // /guide/index.md
+            { text: 'vite与ts的结合', link: '/engineer/vite/ts' }, // /guide/one.md
+          ]
+        }
+      ]
+    },
     socialLinks: [{ icon: "github", link: "https://github.com/sheerLi" }],
     footer: {
       message: "MIT Licensed",
