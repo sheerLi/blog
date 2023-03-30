@@ -20,6 +20,10 @@ export default {
         ],
       },
       {
+        text: "前端基础",
+        items: [{ text: "JavaScript", link: "/fe/js/" }],
+      },
+      {
         text: "前端框架",
         items: [
           { text: "Vue", link: "/framework/vue" },
@@ -37,16 +41,22 @@ export default {
       },
     ],
     sidebar: {
-      '/engineer/vite/': [
+      "/engineer/vite/": [
         {
-          text: 'Vite',
+          text: "Vite",
           items: [
-            { text: '概念', link: '/engineer/vite/' },
-            { text: '依赖预构建', link: '/engineer/vite/dep-pre-bundling' }, // /guide/index.md
-            { text: 'vite与ts的结合', link: '/engineer/vite/ts' }, // /guide/one.md
-          ]
-        }
-      ]
+            { text: "概念", link: "/engineer/vite/" },
+            { text: "依赖预构建", link: "/engineer/vite/dep-pre-bundling" }, // /guide/index.md
+            { text: "vite与ts的结合", link: "/engineer/vite/ts" }, // /guide/one.md
+          ],
+        },
+      ],
+      "/fe/js/": [
+        {
+          text: "前言",
+          items: [{ text: "变量类型和计算", link: "/fe/js/variable" }],
+        },
+      ],
     },
     socialLinks: [{ icon: "github", link: "https://github.com/sheerLi" }],
     footer: {
