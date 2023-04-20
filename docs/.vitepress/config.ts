@@ -39,6 +39,10 @@ export default {
         text: "Docker",
         link: "/docker",
       },
+      {
+        text: "k8s",
+        link: "/k8s",
+      },
     ],
     sidebar: {
       "/engineer/vite/": [
